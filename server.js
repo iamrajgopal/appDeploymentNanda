@@ -1,12 +1,13 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const path = require("path");
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use(express.static());
+app.use(express.static(path.join(__dirname),"./day/build"));
 
 mongoose.connect("mongodb+srv://iamrajgopal:iamrajgopal@cluster0.qctpxd2.mongodb.net/cart?retryWrites=true&w=majority");
 

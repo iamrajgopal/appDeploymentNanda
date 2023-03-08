@@ -24,7 +24,7 @@ function Offcanvas1() {
       headers:dataToSend,
       body:sentingData
      }
-     let JsonData = await fetch("http://localhost:3197/posting",reqOptions);
+     let JsonData = await fetch("/posting",reqOptions);
      let JsoData = await JsonData.json();
      console.log(JsoData)
   }
