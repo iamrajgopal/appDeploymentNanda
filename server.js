@@ -7,7 +7,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname),"./day/build"));
+app.use(express.static(path.join(__dirname,"./day/build")));
 
 mongoose.connect("mongodb+srv://iamrajgopal:iamrajgopal@cluster0.qctpxd2.mongodb.net/cart?retryWrites=true&w=majority");
 
