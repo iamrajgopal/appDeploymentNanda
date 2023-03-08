@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {Button,Offcanvas} from 'react-bootstrap';
-import {useSelector} from 'react-redux'
+import {useSelector} from 'react-redux';
 
 function Offcanvas1() {
   const [show, setShow] = useState(false);
