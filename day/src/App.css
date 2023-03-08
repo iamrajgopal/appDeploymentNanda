@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+}
+.cardclass{
+  display: flex; flex-direction: row; flex-wrap: wrap;gap: 5px;
+}
+
+.carding{height: 450px; border: 2px solid red; }
