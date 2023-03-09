@@ -2,6 +2,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const path = require("path");
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 const app = express();
 
@@ -9,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname,"./day/build")));
 
-mongoose.connect("mongodb+srv://iamrajgopal:iamrajgopal@cluster0.qctpxd2.mongodb.net/cart?retryWrites=true&w=majority");
+mongoose.connect(process.env.MDBconectionSting);
 
 let productsSchema = new mongoose.Schema({
     id:Number,

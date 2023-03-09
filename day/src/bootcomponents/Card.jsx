@@ -18,7 +18,7 @@ function BasicExample() {
         let reqOptions = {
             method:"GET"
         }
-       let JsonData = await fetch("/get",reqOptions);
+       let JsonData = await fetch("http://localhost:3197/get",reqOptions);
        let JsoData = await JsonData.json();
        setData(JsoData);
        
